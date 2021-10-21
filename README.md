@@ -527,8 +527,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 | _Element_ | _Descripció_ |
 | --- | --- |
-| /respostaDocEstatuts/peticioDadesConsulta
- | Bloc de dades corresponent a la petició que origina la resposta. |
+| /respostaDocEstatuts/peticioDadesConsulta | Bloc de dades corresponent a la petició que origina la resposta. |
 | /respostaDocEstatuts/documentacio | Bloc que conté els documents. |
 | //documentacio/dadesIdentificatives | Bloc que conté les dades identificatives de l&#39;entitat. |
 | //dadesIdentificatives/numInscripcio | Número d&#39;inscripció. |
@@ -592,8 +591,8 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 | //domicili/porta | Porta. |
 | //domicili/resta | Dades addicionals que es vulguin fer constar per al domicili. |
 | //dadesFundacio/codiPostal | Codi postal. |
-| //dadesFundacio/codiProvincia | Codi INE de província (vegeu *CODIS\_TERRITORIALS\_PROVINCIES.xls). |
-| //dadesFundacio/codiMunicipi | Codi INE de municipi (vegeu CODIS\_TERRITORIALS\_MUNICIPI.xls). |
+| //dadesFundacio/codiProvincia | Codi INE de província (vegeu *CODIS\_TERRITORIALS\_PROVINCIES.xls*). |
+| //dadesFundacio/codiMunicipi | Codi INE de municipi (vegeu *CODIS\_TERRITORIALS\_MUNICIPI.xls*). |
 | //dadesFundacio/finalitats | Bloc que conté les dades de les finalitats de la fundació. |
 | //finalitats/finalitat | Finalitat. |
 | //dadesFundacio/dataConstitucio | Data de constitució de la fundació (YYYY-MM-DD). |
