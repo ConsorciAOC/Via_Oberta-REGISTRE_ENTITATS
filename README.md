@@ -54,7 +54,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | --- | --- |
 | /peticioBasicaConsulta/nomEntitat | Nom de l&#39;entitat a consultar. S&#39;admeten noms parcials.|
 | /peticioBasicaConsulta/numInscripcio | Número d&#39;inscripció de l&#39;entitat. |
-| /peticioBasicaConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.3.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats)|
+| /peticioBasicaConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.1.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats)|
 | /peticioBasicaConsulta/demTerritorial | Demarcació territorial. <li> 1: Barcelona <li>2:Girona <li> 3:Lleida <li> 4:Tarragona <li> 5:Terres de l&#39;Ebre|
 | /peticioBasicaConsulta/comarca | Nom de comarca.  [Vegeu l&#39;apartat 3.1.1.3.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3113-comarques)|
 | /peticioBasicaConsulta/provincia | Nom del província. [Vegeu l&#39;apartat 3.1.1.2.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3112-prov%C3%ADncies)|
