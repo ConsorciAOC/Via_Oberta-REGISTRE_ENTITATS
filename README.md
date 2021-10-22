@@ -1,9 +1,7 @@
 # VO-REG_ENTITATS
 Documentació d'integració de la modalitat registre entitats del producte de Via Oberta del Consorci AOC
 
-```
-ESBORRANY
-```
+
 
 # 1 Introducció
 
@@ -32,7 +30,7 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 ¹Modalitat de consum exclusiva pel Col·legi de Notaris de Catalunya
 
 ---
- Per restriccions de l&#39;emissor de les dades, la modalitat ENTITAT\_ESTATUTS es consumeix exclusivament pel frontal asíncron.
+ ![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Per restriccions de l&#39;emissor de les dades, la modalitat ENTITAT\_ESTATUTS es consumeix exclusivament pel frontal asíncron.
 
 ---
 
@@ -65,12 +63,12 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | /peticioBasicaConsulta/classificacio | Classificació. Vegeu apartat 3.1.1.2. |
 
 ---
-L&#39;emissor final requereix que com a mínim s&#39;informi un dels criteris de filtratge de la petició. La consulta retornarà com a màxim 50 entitats ordenades per data d&#39;inscripció.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) L&#39;emissor final requereix que com a mínim s&#39;informi un dels criteris de filtratge de la petició. La consulta retornarà com a màxim 50 entitats ordenades per data d&#39;inscripció.
 
 ---
 
 ---
- Hi ha un alt percentatge d&#39;entitats que no tenen el CIF informat a la base de dades del Departament de Justícia. Si a l&#39;hora de fer la consulta informeu el CIF i aquest, tot i ser correcte, no consta a la base de dades de l&#39;emissor, l&#39;entitat no serà localitzada.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Hi ha un alt percentatge d&#39;entitats que no tenen el CIF informat a la base de dades del Departament de Justícia. Si a l&#39;hora de fer la consulta informeu el CIF i aquest, tot i ser correcte, no consta a la base de dades de l&#39;emissor, l&#39;entitat no serà localitzada.
 
 --- 
 
@@ -509,7 +507,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 ---
 
- Aquesta modalitat es serveix exclusivament pel frontal asíncron.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Aquesta modalitat es serveix exclusivament pel frontal asíncron.
 
 ---
 
@@ -548,7 +546,7 @@ https://serveis3.iop.aoc.cat/CAOC-PCI30-MC-REGISTREENTITATS/descarrega?guid=<GUI
 Aquesta modalitat permet lliurar escriptures públiques i incorporar-les a la base de dades del Departament de Justícia:
 
 ---
-Aquesta modalitat es serveix exclusivament pel frontal asíncron.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Aquesta modalitat es serveix exclusivament pel frontal asíncron.
 
 ---
 
@@ -618,7 +616,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 ---
 
-Aquesta modalitat es serveix exclusivament pel frontal asíncron.
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Aquesta modalitat es serveix exclusivament pel frontal asíncron.
 
 ---
 
