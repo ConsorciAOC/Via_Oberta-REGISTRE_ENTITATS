@@ -48,6 +48,8 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 
 ### 3.1.1 Petició – dades específiques
 
+![1](captures/1.png)
+
 | _Element_ | _Descripció_ |
 | --- | --- |
 | /peticioBasicaConsulta/nomEntitat | Nom de l&#39;entitat a consultar. S&#39;admeten noms parcials.|
@@ -72,7 +74,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 
 --- 
 
-#### 3.1.1.1Tipus d&#39;entitats
+#### 3.1.1.1 Tipus d&#39;entitats
 
 | _Codi tipus_ | _Descripció_ |
 | --- | --- |
@@ -199,7 +201,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | Vallès Occidental |
 | Vallès Oriental |
 
-#### 3.1.1.4Classificació
+#### 3.1.1.4 Classificació
 
 | _Codi_ | _Classificació_ |
 | --- | --- |
@@ -278,6 +280,8 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 
 ### 3.1.2 Resposta – dades específiques
 
+![2](captures/2.png)
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -315,6 +319,8 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 
 ### 3.2.1 Petició – dades específiques
 
+
+![3](captures/3.png)
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -368,6 +374,8 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 | //dadesDomiciliaries/pais | Nom de país. |
 | /respostaDadesEntitat/resultat/codiResultat |<li> 0: consulta realitzada correctament.<li> 1: error realitzant la consulta.<li> 2: no s&#39;han trobat entitats. |
 | /respostaDadesEntitat/resultat/descripcio | Literal descriptiu del resultat de la consulta. |
+
+![4](captures/4.png)
 
 
 #### 3.2.2.1 Càrrec
@@ -513,6 +521,8 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 ### 3.3.1 Petició – dades específiques
 
+![5](captures/5.png)
+
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -540,6 +550,8 @@ __²__ URL de descàrrega a producció:
 ```
 https://serveis3.iop.aoc.cat/CAOC-PCI30-MC-REGISTREENTITATS/descarrega?guid=<GUID>
 ```
+
+![6](captures/6.png)
 
 ## 3.4 Lliurament d&#39;escriptures (ENTITAT\_ESCRIPTURES)
 
@@ -603,12 +615,17 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 | //estatuts/mimeType | Tipus del document:<li> *XML*<li> *PDF*<li> *RTF*<li> *DOC*<li> *UNKNOWN* |
 | //estatuts/id | Identificador de fitxer. Únic en la petició.<br><br> Per identificar el fitxer corresponent al formulari de tramitació, caldrà alinear l&#39;atribut *Fichero@Id* del bloc genèric amb l&#39;element *id* de les dades específiques de la sol·licitud (vegeu apartat 3.4.1).|
 
+
+![7](captures/7.png)
+
 ### 3.4.3 Resposta – dades específiques
 
 | _Element_ | _Descripció_ |
 | --- | --- |
 | /respostaRegistreFundacions/resultat/codiResultat |<LI>0: operació realitzada correctament.<li> 1: error realitzant l&#39;operació.<li> 2: no s&#39;han trobat entitat. |
 | /respostaRegistreFundacions/resultat/descripcio | Literal descriptiu del resultat de la consulta.|
+
+![8](captures/8.png)
 
 ## 3.5 Obtenció dels compte (ENTITAT\_COMPTES)
 
@@ -621,6 +638,8 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 ---
 
 ### 3.5.1 Petició – dades específiques
+
+![9](captures/9.png)
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -645,6 +664,8 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 | //documentacio/guid | GUID del document que permet la descàrrega via URL de descàrrega __³__  (per descarregar documents pesats els quals no es poden incrustar en el XML de resposta) .<br><br> Tots els documents es lliuraran en un únic fitxer ZIP comprimit. |
 | /respostaDocEstatuts /resultat/codiResultat |<li>0: consulta realitzada correctament.<li> 1: error realitzant la consulta.<li> 2: no s&#39;han trobat entitats. |
 | /respostaDocEstatuts /resultat/descripcio | Literal descriptiu del resultat de la consulta. |
+
+![10](captures/10.png)
 
  __³__ URL de descàrrega a producció:
 ```
