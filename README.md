@@ -54,15 +54,15 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | --- | --- |
 | /peticioBasicaConsulta/nomEntitat | Nom de l&#39;entitat a consultar. S&#39;admeten noms parcials.|
 | /peticioBasicaConsulta/numInscripcio | Número d&#39;inscripció de l&#39;entitat. |
-| /peticioBasicaConsulta/tipusEntitat | Tipus de l&#39;entitat. Vegeu l&#39;apartat .|
+| /peticioBasicaConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.3.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats)|
 | /peticioBasicaConsulta/demTerritorial | Demarcació territorial. <li> 1: Barcelona <li>2:Girona <li> 3:Lleida <li> 4:Tarragona <li> 5:Terres de l&#39;Ebre|
-| /peticioBasicaConsulta/comarca | Nom de comarca. Vegeu l&#39;apartat 3.1.1.3.|
-| /peticioBasicaConsulta/provincia | Nom del província. Vegeu l&#39;apartat 3.1.1.2.|
+| /peticioBasicaConsulta/comarca | Nom de comarca.  [Vegeu l&#39;apartat 3.1.1.3.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3113-comarques)|
+| /peticioBasicaConsulta/provincia | Nom del província. [Vegeu l&#39;apartat 3.1.1.2.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3112-prov%C3%ADncies)|
 | /peticioBasicaConsulta/CIF | Codi d&#39;identificació fiscal. |
 | /peticioBasicaConsulta/estat | Estat de l&#39;entitat. <li>1: Pendent inscripció <li>2: Inscrita <li>3: Extingida <li> 5: Trasllat<li> 6: Baixa sense inscripció |
 | /peticioBasicaConsulta/dataInscripcio | Data d&#39;inscripció (YYYY-MM-DD). |
 | /peticioBasicaConsulta/dataDissolucio | Data de dissolució (YYYY-MM-DD). |
-| /peticioBasicaConsulta/classificacio | Classificació. Vegeu apartat 3.1.1.2. |
+| /peticioBasicaConsulta/classificacio | Classificació. [Vegeu l&#39;apartat 3.1.1.2.](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3112-prov%C3%ADncies) |
 
 ---
 ![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) L&#39;emissor final requereix que com a mínim s&#39;informi un dels criteris de filtratge de la petició. La consulta retornarà com a màxim 50 entitats ordenades per data d&#39;inscripció.
@@ -289,7 +289,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | /respostaIncripcionsEntitats/entitat | Bloc que conté les dades d&#39;una entitat. Es retornarà fins a un màxim de 50 resultats. |
 | //entitat/dadesIdentificatives | Bloc que conté les dades identificatives de l&#39;entitat. |
 | //dadesIdentificatives/numInscripcio | Número d&#39;inscripció. |
-| //dadesIdentificatives/tipusEntitat | Tipus de l&#39;entitat. Vegeu l&#39;apartat . |
+| //dadesIdentificatives/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats))|
 | //dadesIdentificatives/demTerritorial | Demarcació territorial. <li>1: Barcelona <li>2:Girona<li>3:Lleida<li> 4:Tarragona<li>5:Terres de l&#39;Ebre |
 | //dadesIdentificatives/idIntern | Identificador intern de l&#39;entitat. |
 | //dadesIdentificatives/CIF | Identificador fiscal. |
@@ -327,7 +327,7 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 | /peticioDadesConsulta/idIntern | Identificador intern, retornat en la resposta de la modalitat *ENTITAT\_INSCRIPCIO*.<br> L&#39;ús d&#39;aquest paràmetre exclou l&#39;ús dels tres següents. |
 | /peticioDadesConsulta/numInscripcio | Número d&#39;inscripció de l&#39;entitat.|
 | /peticioDadesConsulta/demTerritorial | Codi de demarcació territorial a la que pertany l&#39;entitat, retornat en la resposta de la modalitat *ENTITAT\_INSCRIPCIO*:<li> 1: Barcelona<li> 2:Girona<li>3:Lleida<li> 4:Tarragona<li> 5:Terres de l&#39;Ebre |
-| /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. Vegeu l&#39;partat 0 . |
+| /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;partat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats) |
 
 ### 3.2.2 Resposta – dades específiques
 
@@ -529,7 +529,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 | /peticioDadesConsulta/idIntern | Identificador intern (retornat per la modalitat ENTITAT\_INSCRIPCIO). |
 | /peticioDadesConsulta/numIncripcio | Número d&#39;inscripció de l&#39;entitat. |
 | /peticioDadesConsulta/demTerritorial | Codi de demarcació territorial on pertany l&#39;entitat (retornat per la modalitat ENTITAT\_INSCRIPCIO):<li> 1: Barcelona<li> 2:Girona<li> 3:Lleida<li> 4:Tarragona<li>5:Terres de l&#39;Ebre |
-| /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. Vegeu l&#39;apartat . |
+| /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats) |
 
 ### 3.3.2 Resposta – dades específiques
 
@@ -609,7 +609,7 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 | /peticioRegistreFundacions/escriptura | Bloc que conté les escriptures. |
 | //escriptura/nom | Nom. |
 | //escriptura/mimeType | Tipus del document:<li> *XML*<li> *PDF*<li> *RTF*<li>*DOC*<li> *UNKNOWN* |
-| //escriptura/id | Identificador de fitxer. Únic en la petició.<br><br> Per identificar el fitxer corresponent al formulari de tramitació, caldrà alinear l&#39;atribut *Fichero@Id* del bloc genèric amb l&#39;element *id* de les dades específiques de la sol·licitud (vegeu apartat 3.4.1). |
+| //escriptura/id | Identificador de fitxer. Únic en la petició.<br><br> Per identificar el fitxer corresponent al formulari de tramitació, caldrà alinear l&#39;atribut *Fichero@Id* del bloc genèric amb l&#39;element *id* de les dades específiques de la sol·licitud ([vegeu apartat 3.4.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#341-petici%C3%B3--dades-gen%C3%A8riques)). |
 | /peticioRegistreFundacions/estatuts | Bloc que conté els estatuts. |
 | //estatuts/nom | Nom. |
 | //estatuts/mimeType | Tipus del document:<li> *XML*<li> *PDF*<li> *RTF*<li> *DOC*<li> *UNKNOWN* |
@@ -646,7 +646,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 | /peticioDadesConsultaComptes/idIntern | Identificador intern (retornat per la modalitat *ENTITAT\_INSCRIPCIO*). |
 | /peticioDadesConsultaComptes/numIncripcio | Número d&#39;inscripció de l&#39;entitat. |
 | /peticioDadesConsultaComptes/demTerritorial | Codi de demarcació territorial on pertany l&#39;entitat (retornat per la modalitat *ENTITAT\_INSCRIPCIO*):<li>1: Barcelona<li> 2:Girona<li> 3:Lleida<li>4:Tarragona<li> 5:Terres de l&#39;Ebre |
-| /peticioDadesConsultaComptes/tipusEntitat | Tipus de l&#39;entitat. Vegeu l&#39;apartat . |
+| /peticioDadesConsultaComptes/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats) |
 | /peticioDadesConsultaComptes/anyInici | Exercici dels comptes (no s&#39;ha d&#39;entendre com un interval d&#39;anys). En casos on l&#39;exercici comença un cop entrat l&#39;any es pot especificar l&#39;inici i fi (p.e. una entitat per la qual l&#39;exercici econòmic va des del l&#39;1 de setembre al 31 d&#39;agost s&#39;informaria *anyInici=2011* i *anyFi=2012* tot i que l&#39;emissor indica que informant únicament l&#39;inici és suficient). |
 | /peticioDadesConsultaComptes/anyFi |
 
