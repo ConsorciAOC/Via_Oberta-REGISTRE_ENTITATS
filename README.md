@@ -1,9 +1,33 @@
 # VO-REG_ENTITATS
 Documentació d'integració de la modalitat registre entitats del producte de Via Oberta del Consorci AOC
 
+- [1. Introducció](#1)
+- [2. Transmissions de dades disponibles](#2)
+- [3. Missatgeria del servei](#3)
+   * [3.1 Dades d&#39;inscripció (ENTITAT\_INSCRIPCIO)](#3.1)
+        * [3.1.1 Petició – dades específiques](#3.1.1)
+			* [3.1.1.1 Tipus d&#39;entitats](#3.1.1.1)
+			* [3.1.1.2 Províncies](#3.1.1.2)
+			* [3.1.1.3 Comarques](#3.1.1.3)
+			* [3.1.1.4 Classificació](#3.1.1.4)
+		* [3.1.2 Resposta – dades específiques](#3.1.2)
+   * [3.2 Dades completes d&#39;una entitat (ENTITAT\_DADES)](#3.2)
+        * [3.2.1 Petició – dades específiques](#3.2.1)
+		* [3.2.2 Resposta – dades específiques](#3.2.2)
+			* [3.2.2.1 Càrrec](#3.2.2.1)
+   * [3.3 Obtenció dels estatuts (ENTITAT\_ESTATUTS)](#3.3)
+		* [3.3.1 Petició – dades específiques](#3.3.1)
+		* [3.3.2 Resposta – dades específiques](#3.3.2)
+   * [3.4 Lliurament d&#39;escriptures (ENTITAT\_ESCRIPTURES)](#3.4)
+		* [3.4.1 Petició – dades genèriques](#3.4.1)
+		* [3.4.2 Petició – dades específiques](#3.4.2)
+		* [3.4.3 Resposta – dades específiques](#3.4.3)
+   * [3.5 Obtenció dels compte (ENTITAT\_COMPTES)](#3.5)
+		* [3.5.1 Petició – dades específiques](#3.5.1)
+		* [3.5.2 Resposta – dades específiques](#3.5.2)
 
 
-# 1 Introducció
+# 1 Introducció <a name="1"></a>
 
 Aquest document detalla la missatgeria associada al servei del Registre d&#39;Entitats del Departament de Justícia de la Generalitat de Catalunya.
 
@@ -11,7 +35,7 @@ Per a poder realitzar la integració cal conèixer prèviament la següent docum
 
 - [Document d&#39;_Especificació de missatgeria pel consum de productes de la plataforma PCI_ del Consorci AOC.](https://github.com/ConsorciAOC/PCI)
 
-# 2 Transmissions de dades disponibles
+# 2 Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -38,15 +62,15 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 
 Les modalitats ENTITAT\_INSCRIPCIO i ENTITAT\_DADES tenen disponible la versió imprimible del resultat de la consulta en format PDF. Per més detalls adreceu-vos a l&#39;apartat _Extensions de missatgeria_ del document de missatgeria genèrica.
 
-# 3 Missatgeria dels serveis
+# 3 Missatgeria del servei <a name="3"></a>
 
 A continuació es detalla la missatgeria corresponent a les modalitats de consum del producte Registre d&#39;Entitats.
 
-## 3.1 Dades d&#39;inscripció (ENTITAT\_INSCRIPCIO)
+## 3.1 Dades d&#39;inscripció (ENTITAT\_INSCRIPCIO) <a name="3.1"></a>
 
 Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris genèrics de filtratge. Com a resultat es pot obtenir una llista de fins a 50 entitats.
 
-### 3.1.1 Petició – dades específiques
+### 3.1.1 Petició – dades específiques <a name="3.1.1"></a>
 
 ![1](captures/1.png)
 
@@ -74,7 +98,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 
 --- 
 
-#### 3.1.1.1 Tipus d&#39;entitats
+#### 3.1.1.1 Tipus d&#39;entitats <a name="3.1.1.1"></a>
 
 | _Codi tipus_ | _Descripció_ |
 | --- | --- |
@@ -98,7 +122,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | 8 | Altres |
 | 9 | Tuteles |
 
-#### 3.1.1.2 Províncies
+#### 3.1.1.2 Províncies <a name="3.1.1.2"></a>
 
 | _Províncies_ |
 | --- |
@@ -155,7 +179,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | Ceuta |
 | Melilla |
 
-#### 3.1.1.3 Comarques
+#### 3.1.1.3 Comarques <a name="3.1.1.3"></a>
 
 | _Comarcas_ |
 | --- |
@@ -201,7 +225,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | Vallès Occidental |
 | Vallès Oriental |
 
-#### 3.1.1.4 Classificació
+#### 3.1.1.4 Classificació <a name="3.1.1.4"></a>
 
 | _Codi_ | _Classificació_ |
 | --- | --- |
@@ -278,7 +302,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | 236 | Federació estatal - Ordenació de l&#39;espai, ecologia i habitatge |
 | 237 | Federació estatal - Interessos de sectors econòmics, geogràfics o professionals |
 
-### 3.1.2 Resposta – dades específiques
+### 3.1.2 Resposta – dades específiques <a name="3.1.2"></a>
 
 ![2](captures/2.png)
 
@@ -309,7 +333,7 @@ Aquesta modalitat permet obtenir una llista d&#39;entitats segons uns criteris g
 | /respostaIncripcionsEntitats/resultat/codiResultat |<li>0: consulta realitzada correctament.<li> 1: error realitzant la consulta. |
 | /respostaIncripcionsEntitats/resultat/descripcio | Literal descriptiu del resultat de la consulta. |
 
-## 3.2 Dades completes d&#39;una entitat (ENTITAT\_DADES)
+## 3.2 Dades completes d&#39;una entitat (ENTITAT\_DADES) <a name="3.2"></a>
 
 Aquesta modalitat permet consultar les dades domiciliàries i els òrgans de govern de les entitats obtingudes amb la modalitat *ENTITAT\_INSCRIPCIO*.
 
@@ -317,7 +341,7 @@ La consulta es pot realitzar informant l&#39;identificador intern obtingut mitja
 
 La llista de càrrecs pot incloure dades de persones físiques i de persones jurídiques.
 
-### 3.2.1 Petició – dades específiques
+### 3.2.1 Petició – dades específiques <a name="3.2.1"></a>
 
 
 ![3](captures/3.png)
@@ -329,7 +353,7 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 | /peticioDadesConsulta/demTerritorial | Codi de demarcació territorial a la que pertany l&#39;entitat, retornat en la resposta de la modalitat *ENTITAT\_INSCRIPCIO*:<li> 1: Barcelona<li> 2:Girona<li>3:Lleida<li> 4:Tarragona<li> 5:Terres de l&#39;Ebre |
 | /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;partat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats) |
 
-### 3.2.2 Resposta – dades específiques
+### 3.2.2 Resposta – dades específiques <a name="3.2.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -378,7 +402,7 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 ![4](captures/4.png)
 
 
-#### 3.2.2.1 Càrrec
+#### 3.2.2.1 Càrrec <a name="3.2.2.1"></a>
 
 | _Codi_ | _Càrrec_ |
 | --- | --- |
@@ -509,7 +533,7 @@ La llista de càrrecs pot incloure dades de persones físiques i de persones jur
 | 460 | Coordinadora |
 | 461 | Delegada |
 
-## 3.3 Obtenció dels estatuts (ENTITAT\_ESTATUTS)
+## 3.3 Obtenció dels estatuts (ENTITAT\_ESTATUTS) <a name="3.3"></a>
 
 Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
@@ -519,7 +543,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 ---
 
-### 3.3.1 Petició – dades específiques
+### 3.3.1 Petició – dades específiques <a name="3.3.1"></a>
 
 ![5](captures/5.png)
 
@@ -531,7 +555,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 | /peticioDadesConsulta/demTerritorial | Codi de demarcació territorial on pertany l&#39;entitat (retornat per la modalitat ENTITAT\_INSCRIPCIO):<li> 1: Barcelona<li> 2:Girona<li> 3:Lleida<li> 4:Tarragona<li>5:Terres de l&#39;Ebre |
 | /peticioDadesConsulta/tipusEntitat | Tipus de l&#39;entitat. [Vegeu l&#39;apartat 3.1.1.1](https://github.com/ConsorciAOC/VO-REG_ENTITATS#3111-tipus-dentitats) |
 
-### 3.3.2 Resposta – dades específiques
+### 3.3.2 Resposta – dades específiques <a name="3.3.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -553,7 +577,7 @@ https://serveis3.iop.aoc.cat/CAOC-PCI30-MC-REGISTREENTITATS/descarrega?guid=<GUI
 
 ![6](captures/6.png)
 
-## 3.4 Lliurament d&#39;escriptures (ENTITAT\_ESCRIPTURES)
+## 3.4 Lliurament d&#39;escriptures (ENTITAT\_ESCRIPTURES) <a name="3.4"></a>
 
 Aquesta modalitat permet lliurar escriptures públiques i incorporar-les a la base de dades del Departament de Justícia:
 
@@ -563,7 +587,7 @@ Aquesta modalitat permet lliurar escriptures públiques i incorporar-les a la ba
 ---
 
 
-### 3.4.1 Petició – dades genèriques
+### 3.4.1 Petició – dades genèriques <a name="3.4.1"></a>
 
 Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/Fichero* de les dades genèriques de la sol·licitud.
 
@@ -573,7 +597,7 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 | //Ficheros/Fichero/RutaFichero | Alternativa a *Contenido*, permet informa la ruta (ha de ser accessible per la plataforma PCI del CAOC) on es troba el fitxer (p.e. transferint-la prèviament per SFTP). |
 | //Ficheros/Fichero/Id | Identificador del fitxer referenciat a les dades específiques:<li> *//escriptura/id*<li> *//estatuts/id* |
 
-### 3.4.2 Petició – dades específiques
+### 3.4.2 Petició – dades específiques <a name="3.4.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -618,7 +642,7 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 
 ![7](captures/7.png)
 
-### 3.4.3 Resposta – dades específiques
+### 3.4.3 Resposta – dades específiques <a name="3.4.3"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
@@ -627,7 +651,7 @@ Els fitxers a transferir s&#39;han de referenciar al bloc de dades *//Ficheros/F
 
 ![8](captures/8.png)
 
-## 3.5 Obtenció dels compte (ENTITAT\_COMPTES)
+## 3.5 Obtenció dels compte (ENTITAT\_COMPTES) <a name="3.5"></a>
 
 Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
@@ -637,7 +661,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 
 ---
 
-### 3.5.1 Petició – dades específiques
+### 3.5.1 Petició – dades específiques <a name="3.5.1"></a>
 
 ![9](captures/9.png)
 
@@ -650,7 +674,7 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 | /peticioDadesConsultaComptes/anyInici | Exercici dels comptes (no s&#39;ha d&#39;entendre com un interval d&#39;anys). En casos on l&#39;exercici comença un cop entrat l&#39;any es pot especificar l&#39;inici i fi (p.e. una entitat per la qual l&#39;exercici econòmic va des del l&#39;1 de setembre al 31 d&#39;agost s&#39;informaria *anyInici=2011* i *anyFi=2012* tot i que l&#39;emissor indica que informant únicament l&#39;inici és suficient). |
 | /peticioDadesConsultaComptes/anyFi |
 
-### 3.5.2 Resposta – dades específiques
+### 3.5.2 Resposta – dades específiques <a name="3.5.2"></a>
 
 | _Element_ | _Descripció_ |
 | --- | --- |
