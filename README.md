@@ -25,6 +25,7 @@ Documentació d'integració de la modalitat registre entitats del producte de Vi
    * [3.5 Obtenció dels compte (ENTITAT\_COMPTES)](#3.5)
 		* [3.5.1 Petició – dades específiques](#3.5.1)
 		* [3.5.2 Resposta – dades específiques](#3.5.2)
+- [4. Joc de proves](#4)
 
 
 # 1 Introducció <a name="1"></a>
@@ -695,3 +696,14 @@ Aquesta modalitat permet obtenir els documents dels estatuts d&#39;una entitat:
 ```
 https://serveis3.iop.aoc.cat/CAOC-PCI30-MC-REGISTREENTITATS/descarrega?guid=<GUID>
 ```
+
+## 4 Joc de proves <a name="4"></a>
+
+L’emissor final de les dades proporciona les següents dades vàlides per l’entorn de preproducció:
+
+L&#39;emissor final publica els següent [joc de proves a l&#39;entorn de pre-producció][proves] 
+
+[proves]: https://administracionelectronica.gob.es/ctt/svd/descargas#.YvOZNXbP2Ul
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+
+[form]:https://suport.aoc.cat/hc/ca/requests/new
